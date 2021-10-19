@@ -108,8 +108,7 @@ public class JNIScriptVecClient {
         for (int i = 0; i < clients.length; i++) {
             rs[i] = clients[i].reset(players[i]);
         }
-        System.out.println(rs[0].observation);
-        System.out.println(rs.length);
+
         for (int i = 0; i < rs.length; i++) {
             observation[i] = rs[i].observation;
             reward[i] = rs[i].reward;
