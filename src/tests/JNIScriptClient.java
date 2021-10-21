@@ -77,8 +77,6 @@ public class JNIScriptClient {
         if (micrortsPath.length() != 0) {
             this.mapPath = Paths.get(micrortsPath, mapPath).toString();
         }
-        System.out.println(mapPath);
-        System.out.println(rfs);
         pgs = PhysicalGameState.load(mapPath, utt);
 
         // initialize storage
